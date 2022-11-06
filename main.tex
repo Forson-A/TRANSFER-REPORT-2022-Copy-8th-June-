@@ -1,0 +1,376 @@
+
+\documentclass[12pt]{report} % you must import the user packed  
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+%\documentclass{article}
+\usepackage[table]{xcolor}
+\usepackage{array}
+%\usepackage{natbib}
+\usepackage{changepage}
+ \geometry{a4paper}
+ \usepackage[utf8]{inputenc}
+ \usepackage[english]{babel}
+ \usepackage{natbib,har2nat}
+ \usepackage{pdfpages}
+\usepackage{pdfpages}
+\usepackage{booktabs}
+\usepackage{multirow}
+ %\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{bm}
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+    acronym=blue}
+
+\usepackage{rotating}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\crefname{section}{\S}{\S\S}
+\Crefname{section}{\S}{\S\S}
+\crefname{subsection}{\S}{\S\S}
+\Crefname{subsection}{\S}{\S\S}
+\usepackage{makecell}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\pagenumbering{roman}
+\usepackage{subfig}
+\usepackage{subcaption}
+
+\usepackage[acronym]{glossaries}
+
+
+\usepackage{ragged2e}
+\usepackage{blindtext}
+
+
+\linespread{1.5}
+
+
+\begin{document}
+
+  \begin{center}
+\begin{figure}
+ \centering
+\includegraphics[width=1in]{Figures/UoM_LOGO.png}
+\end{figure}
+%\setcounter{page}{}
+        \LARGE{{\textbf{UNIVERSITY OF MAURITIUS\\}}}
+
+\vspace{1cm}
+
+\Large{\textcolor{blue}{{DEVELOPING AN ARRAY OF
+SMALL PARABOLIC DISH ANTENNAS FOR ANALYSIS OF THE ANGULAR SCALE OF GALACTIC NEUTRAL HYDROGEN EMISSION}}}
+\vspace{1em}\\
+
+
+	\textbf{By:}
+		
+        \vspace{1em}
+        \Large{ \textbf{FORSON Kuntu  Albert}}
+        
+        (\normalsize\textbf{STUDENT ID 1861035})\\
+        
+         \vspace{1em}
+         
+        \normalsize{\textbf{MPhil/PhD TO PhD TRANSFER REPORT}}\\
+        
+        \vspace{1em}
+       
+      \normalsize{\textbf{ FACULTY OF SCIENCE\\
+                    DEPARTMENT OF PHYSICS}}
+\vspace{2em}
+
+    \normalsize{\textbf{October 2022}}
+       
+        \vspace{2em}
+        
+        \normalsize{\textbf{Supervisors}}:\\
+
+	
+N. Heeralall-Issur\(^1\),  A. A. Deshpande\(^2\), P. Wilkinson\(^3\), K. Golap\(^4\) and S. Yashwantsing\(^5\)
+\vspace{2em}
+
+\(^1\) Department of Physics, University of Mauritius, Mauritius\\
+\(^2\) Raman Research Institute Bangalore, India\\
+\(^3\) School of Physics and Astronomy, University of Manchester U.K\\
+\(^4\) National Radio Astronomy Observatory, USA\\
+\(^5\) Department of Mechanical Engineering, University of Mauritius,Mauritius
+
+        \vspace{2em} 
+	\end{center}
+	
+
+	
+\newpage
+    %\pdfbookmark{}
+    
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    
+    %\listofAbbreviations
+    %\input{acro_list}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \newpage
+%\clearpage
+
+\thispagestyle{plain}
+
+
+\addcontentsline{toc}{chapter}{List of Figures}
+
+
+\chaptermark{List of Figures}
+
+\vskip 0.5cm
+{\centerline {\Large \bf List of Figures}}
+\vskip 0.5cm
+\normalsize
+\input{List of Figures}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \newpage
+\clearpage
+
+\thispagestyle{plain}
+\addcontentsline{toc}{chapter}{List of Tables}
+\chaptermark{List of Tables}
+\vskip 0.5cm
+{\centerline {\Large \bf List of Tables}}
+\vskip 0.5cm
+\normalsize
+\input{Lis of Tables.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+
+
+    \newpage
+	%% Acknowledgments
+%\input{acknowledge.tex}
+\thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\chaptermark{Acknowledgements}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Acknowledgements}}
+\vskip 0.5cm
+\normalsize
+\input{acknowledgement.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Dedication}
+\chaptermark{Dedication}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Dedication}}
+\vskip 0.5cm
+\normalsize
+\input{Dedication}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\clearpage
+ \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Abstract}
+\chaptermark{Abstract}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Abstract}}
+\vskip 0.5cm
+\normalsize
+\input{Abstract.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\clearpage
+\thispagestyle{plain}
+\addcontentsline{toc}{chapter}{List of Abbreviation}
+\chaptermark{List of Abbreviation}
+\vskip 0.5cm
+{\centerline {\Large \bf List of Abbreviation}}
+\vskip 0.5cm
+\normalsize
+\input{List of Abbreviations.tex}
+
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\clearpage
+
+\newpage
+
+    \pagenumbering{arabic}
+%\doublespacing
+\thispagestyle{plain}
+\addcontentsline{arabic}{chapter}{Chapter 1}
+\chaptermark{\textbf Chapter 11}
+
+\vskip 0.5cm
+{\centerline {\Large {\textbf Chapter 1}}}
+\vskip 0.5cm
+\normalsize
+\input{chapter1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{arabic}{chapter}{Chapter 2}
+\chaptermark{Chapter 2}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Chapter 2}}
+\vskip 0.5cm
+\normalsize
+\input{chapter2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %\newpage
+% \thispagestyle{plain}
+%\addcontentsline{arabic}{chapter}{chapter 3}
+ %\chaptermark{chapter 3}
+ 
+% \vskip 0.5cm
+% {\centerline{Large \bf Chapter 3}}
+ %\vskip 0.5cm
+% \normalsize
+% \input{chapter3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Chapter 4}
+\chaptermark{Chapter 4}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Chapter 4}}
+\vskip 0.5cm
+\normalsize
+\input{chapter4}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Chapter 5}
+\chaptermark{Chapter 5}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Chapter 5}}
+\vskip 0.5cm
+\normalsize
+\input{chapter5}
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Chapter 6}
+\chaptermark{Chapter 6}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Chapter 6}}
+\vskip 0.5cm
+\normalsize
+\input{chapter6}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Chapter 7}
+%\chaptermark{Chapter7}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Chapter 7}}
+\vskip 0.5cm
+\normalsize
+\input{chapter7}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Chapter 8}
+\chaptermark{Chapter 8}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Chapter 8}}
+\vskip 0.5cm
+\normalsize
+\input{chapter8}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Appendix A}
+\chaptermark{Appendix A}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Appendix A}}
+\vskip 0.5cm
+\normalsize
+\input{Appendix/AppendixA}
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+    
+    \thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Appendix B}
+\chaptermark{Appendix B}
+
+\vskip 0.5cm
+{\centerline {\Large \bf Appendix B}}
+\vskip 0.5cm
+\normalsize
+\input{Appendix/AppendixB}
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\printglossary[type=\acronymtype]
+\bibliography{name}
+\bibliographystyle{agsm}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+

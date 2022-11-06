@@ -1,0 +1,244 @@
+
+\chapter{General Background of the Study}
+\label{chapter 1}
+\large{
+\section{Introduction}
+This report presents the designs of several instruments developed for radio astronomy applications by converting a redundant telecommunication 2.4meter satellite dishes, designing and building of the receiver system and  the data acquisition system.
+ In this introduction, we provide a brief background and motivation, provide details of the objectives of the report, and outline the contents of the report
+
+
+
+\section{Background of the study}
+
+Radio astronomy is the study of the universe using radio frequency electromagnetic signals emitted as a result of physical processes and observable on Earth or in space using radio receivers.
+Building an array of antennas for radio astronomy research necessitates engineering of the subsystem components of the telescope.
+
+
+Understanding the structure and dynamics of our galaxy is complicated by the fact that our viewing point is positioned within the differentially rotating disc of stars, gas, and dust clouds. Therefore, we get a different view of our galaxy that is unlike the view of an external galaxy. The studies at optical wavelength have limitations in probing the structure of our galaxy due to obscuration caused by dust clouds. 
+In contrast, radio waves allow us to see through the dust. Hence use of the 21cm line emission (and absorption) provides a powerful tool to probe the galactic structure and dynamics  by measuring the distribution and velocities of neutral hydrogen clouds. It was not until 1953 that astronomers realised the galaxy had a spiral structure, when the distances between star associations were precisely determined for the first time \cite{unsold2002structure}. 
+Through several such and related studies, radio astronomers have made significant contributions towards revealing the 3D structure of our galaxy, including identification of the spiral structure.
+
+
+Neutral hydrogen (HI) makes up a significant portion of the interstellar medium (ISM), and since its discovery in 1951, its 21-cm line emission has been extensively studied at radio frequencies to gain a better understanding of galaxies, particularly the Milky Way galaxy \cite{storey199421}.
+Specifically, using 21 cm surveys of  galactic HI emissions, it has been shown that it is possible to trace the ISM structure in part because the brightness temperature of the line is directly proportional to the column density of gas \cite{crovisier1983spatial}. 
+Atomic hydrogen serves as a connection between the gas heated or ejected by big stars and the cold molecular gas from which new stars are formed. HI is widely dispersed and, within certain limitations, is easily observable across the galaxy through the 21 cm line.
+
+
+
+Radial velocities calculated from HI spectra have been used to map the locations of gas clouds in the galaxy's plane \cite{bekhti2016hi4pi}, with the goal of determining the galaxy's essential structure through the mapping of gas clouds. The disk structure of the Milky Way galaxy and its spiral arms were discovered using the early single-dish antenna scans according to \cite{dickey2001southern,mcclure2001southern}.
+By utilising interferometry techniques, the structure of HI in the Galactic plane may be seen over a wide range of angular scales, down to an arc-minute in emission or less than an arc-minute in absorption  \cite{deshpande2000power,crovisier1985observation,kalberla1985high} . But the structure of H1 in the galactic plane cannot be easily described in terms of discrete clouds \cite{deshpande2000power, clark1965interferometer, clark1962hydrogen}, with the exception of a few gas clouds associated with supernova remnants or HII regions \cite {green1993power, sturner1994association, routledge1991structure}. 
+
+
+The angular power spectrum can be estimated using an array of telescopes with a range of baselines, which can be used to determine the structures present at various scales and understand the underlying processes. However, only a limited amount of work has been done in this area so far \cite{green1993power}, resulting in results that are quite perplexing when compared to single-antenna observation results. From observations using the Nancay and Arecibo telescope, \cite{dickey2001southern} derived the power spectrum as \(\propto {a^-}{^2}\), and from observations with synthesis
+telescope of the Dominion Radio Astrophysical Observatory (DRAO) by \cite{green1993power} the spectrum was seen to be \(\propto {a^-}{^2}{^.}{^2}\),
+which are quite different from the \(\propto {a^-}{^3}\) trend reported from Westerbork Synthesis Radio Telescope (WSRT) measurement of  presented by \cite{crovisier1983spatial} and \cite{green2006angular}. (where: \textbf{a} is the spatial frequency).
+
+
+Advancements in the study of atomic HI in the universe have been identified as one of the primary scientific drivers for the development of the global Square Kilometre Array (SKA) project \cite{taylor2012square, schilizzi2011project} which would be the world's largest radio telescope, as described by \cite{taylor2012square} and others  \cite{wang2020ska}. SKA1-MID is a dish-based component that is currently being built in South Africa. The second phase of the component, known as SKA2-MID, will be extended to eight other African partner countries by 2030, including Ghana, Kenya, Zambia, Namibia, Botswana, Madagascar, Mozambique, and Mauritius according to \cite{hoare2018uk}.
+
+In order to probe the large-scale structure of the H1 emission, shorter baselines are essential, and have indeed been  used to advantage in the previous studies by \cite{green1993power} and \cite{dickey2001southern} utilising interferometry techniques. However, the size of their dishes constrained their ability to explore the shorter baselines.
+Our study goal is to design and build small array of parabolic dish antennas with shorter baselines that will be capable of analysing the angular scale of galactic HI emission from the southern hemisphere to demystify the results of earlier observation about the angular spectrum of the galactic HI. The study also aimed at developing antennas that will serve the purpose as a precursor instrument for the SKA2-MID in Mauritius when it is completed,  
+
+
+
+
+
+
+
+.....................................................................................
+
+In order to conduct successful radio astronomy research, it is necessary to design and develop suitable antenna and receivers system, which involve use of radio frequency and digital electronics, and electrical as well as mechanical elements.
+These systems must be capable of detecting faint radio signals from space with desired resolution, accuracy and efficiency.
+%Radio aperture synthesis is a method developed by Sir Martin Ryle that involves electronically correlating the output of two or more aerials used as an interferometer \cite{graham1986martin}, in order to reconstruct an image which is equivalent in resolution to one observed from a large single telescope.\cite{lazio2019radio}. 
+
+This entails a details technical examination of the subject, as well as a complete report on the scientific needs of the system. Key results of the comprehensive mechanical design on the dish conversion and construction narrative of the tracking system of parabolic dish antenna, as well as the signal processing receiver and data pipeline, with detailed reporting on measurements and analytical estimation.
+
+At the Mauritius Radio Telescope observatory site, four 2.4-meter redundant telecommunication satellite offset parabolic dishes are being converted into radio astronomy telescopes for the development of an array of parabolic dish antennas.
+
+In designing and constructing the antenna mechanical structures, we focused on the following Mauritius' cyclonic weather conditions and other atmospheric elements.
+%This made it easier to study and improve mechanical structures, which is important for radio astronomy and antenna engineering.
+Before construction and assembly, the antenna system's mechanical construction parts, antenna tracking system, feed horn design, and signal and electrical cabling systems were successfully investigated, designed, and simulated.
+Our study into the design, optimisation, and analysis of the array configuration and commissioning will be employed in the future work to ensure that the telescopes performs  the required scientific goals.
+
+
+When the array is commissioned and fully operational, the instrument will be capable of measuring the angular power spectrum of the HI emissions by interferometric radio observations, as well as sampling a wide range of baselines and measuring the HI emissions' closure phase.
+
+
+The instruments, which include Mauritius' first parabolic dish antenna for radio astronomy research, will support the development of skills and build institutional capacity on the continent and for the SKA2-MID outstations to be built in Mauritius. Contribute, among other things, to the achievement of the African Very Long Baseline Interferometry Network's aims (AVN).
+\cite{copley2016african} and \cite{sharpe2021sarao}
+
+
+In order to conduct successful radio astronomy research, it is necessary to design and develop suitable antenna and receivers system, which involve use of radio frequency and digital electronics, and electrical as well as mechanical elements.
+These systems must be capable of detecting faint radio signals from space with desired resolution, accuracy and efficiency.
+
+........................................................................................................
+
+
+\section{Statement of the Problem}
+
+
+
+\section{Aims and Objectives of the study}
+
+
+
+\begin{enumerate}
+  
+\item 
+Design and build an array of small parabolic dish antennas with shorter antenna spacing for analysing the angular scale of galactic HI emission from the southern hemisphere.
+
+\item
+The KAT-7 was designed largely as a forerunner to the MeerKAT 64-dish radio telescope array and to prove South Africa's potential to host the SKA project.
+The 4-dish radio telescope array when fully developed will also serve as a predecessor instrument and to demonstrate Mauritius' ability to host the SKA2-MID project.
+
+\item Covert and build four prototype antennas with 2.4 m diameter with a parabolic reflector;
+Build a robust antenna architecture to be able to sustain historical cyclonic conditions in the Island of Mauritius (i.e.
+speed wind of about 230 km/h) as well as other environmental conditions considered in building a radio telescope.
+
+\item
+The study of Radio astronomy in Mauritius  started since 1992 but the use of aperture antennas and mid -high  frequency observations have not yet been exploited. The array when completed, will be the Mauritius’ first parabolic dish antenna for radio astronomy research, will enable the development of  key skills and capacity to support the SKA outstations yet to be constructed in Mauritius other AVN countries. 
+
+
+\end{enumerate}
+
+
+\section{The purpose of the study}
+The study's goal is met when the angular power spectrum of the galactic HI is derived, resolving the uncertainty raised by prior observation studies, and a prototype instrument for the SKA2-MID project in Mauritius is developed.
+The study will also give research experiment instruments in radio astronomy to address the difficulty of access to experimental instruments that research students in Africa experience.
+
+
+
+\section{Significant of the study}
+
+..........................................
+The most significant factor of the study is attained when the array is developed, commissioned and able to performed various radio astronomy observation within the instrument's design specifications.
+
+The study provides some technical insights into the developments radio astronomy instruments as well as making very practical and achieve-able recommendations that are meant to .  The researcher is most convinced the roles of the 
+.........................................
+
+\section{Motivation}
+
+The African Very Long Baseline Interferometry Network (AVN) is a large initiative that aims to build a network of radio telescopes across Africa to complement the global VLBI network. This network will aid scientists in their quest to better comprehend the cosmos.
+Stations located throughout Africa would significantly enhance the image fidelity of VLBI observations since their geographic location has been shown to increase sensitivity to angular scales in the sky that are not sufficiently sampled by the current global configuration. The African Very Long Baseline Interferometry Network (AVN) is a project that aims to improve VLBI observational capabilities in a number of African countries.
+The network's purpose is to construct new telescopes by converting large-diameter telecommunications antennas into radio telescopes and by constructing new telescopes in areas where such infrastructure does not exist.
+Our motivation came from the AVN's project of converting the four 2.4-meter off-set Mauritius telecommunication parabolic dishes into radio astronomy antennas.
+
+\section{ Project Overview}
+The thesis is organised as follows:
+
+The implementation of this project in dived into two major parts: The part one forms the the front-end
+electronics and the mechanical design and the part two forms the back-end electronics and the
+data processing pipeline.
+Front- end electronics and mechanical designing
+This part involves the designing of the study mount suitable for the Mauritian weather conditions, designing of the controlling system and the a Suitable multi-frequency feeds systems.
+Designing,configuration and the telescopes layout and planning at the site for optimum coverage.
+Back-end electronics and data processing pipeline
+This part also involves the designing and building of the receiver system for the three telescopes.The design of the data acquisition system. As a team developing this array, Mr. Paul
+Akumu is focusing on the part two whiles I also focuses on the part one to enhanced a full
+instrument for radio astronomy instrument for the various types of radio astronomy research.
+
+
+The designs of the various associated components and instrumentation parts that will allow for the precise and efficient detection of radio signals from space. To do this assignment, one must first understand the instrumentation and how it works and develops. This section provides a quick overview of the instrument's core components and how signals from space are detected.
+
+\section{Research methods}
+Our expectations are that the study's objectives will be met.
+We employed research techniques such as scholarly relevant literature to establish the theoretical framework, and we did both organised and unstructured designs, simulations, and prototype testing. In total, four dishes were successfully converted and built. The study employs both qualitative and quantitative methods.
+
+
+\section{Organisation of the study}
+
+The thesis is organised as follows:
+
+Chapter 1 outlines in detail the scientific case. A full description of the past and present
+dish array antenna telescopes study is presented. Materials were taken from highly cited authors who have
+published on the matter numerous articles and have been investigating the related issues
+for years.
+
+Chapter 2 Provides an overview of radio astronomy instrumentation in general and HI instrumentation in particular. The necessary scientific background and terminology are also introduced. We describe the Mauritians' environmental conditions for radio astronomy instrumentation hardware and tools, including the current-SKA project and next-generation scientific instruments yet to be constructed.
+
+Chapter 3 We present details of the antenna mechanical structure design, the dish conversion, and the antenna control system design. We constructed 4 telescopes using 2.4meters old telecommunication satellite dishes to suit the Mauritians cyclonic and the environmental weather conditions.
+%which showed conclusively in simulation and two recent strong cyclones that the design is capable of withstanding the Mauritians cyclonic weather.
+
+
+Chapter 4 Describes the development of the antenna system design in detail. Each subsystem of the instrument is discussed and characterised at length with tests, measurements and simulations.
+
+
+Chapter 5 Details the radiometer performance and calculations necessary to gauge the sensitivity needed. It gives in detail how topics such as the antenna temperature, line temperature
+and receiver temperature were measured. 
+....It also takes data from the RFI measurements to determine the dynamic range between the antenna noise and RFI noise .....
+
+
+Chapter 6 We present details on interferometry techniques applied in designing and developing the array of the telescopes.
+
+Chapter 7 presents our investigation into the design of a system for performing
+ of each telescope. We present a prototype interferometry instrument with receiver system and data acquisition pipeline, and
+we predict that it will be possible to further radio astronomy observation experiments. Such a solution may have a considerable advantage
+in price-performance over the conversion of lager dish into radio telescopes.
+
+Chapter 8 concludes this thesis, and provides remarks on the instrumentation, and what can be expected for this instrumentation
+
+
+\section{Conclusion}
+
+In this thesis we describe the design and development of the instruments, and the preliminary results from their deployments that verify their functionality. Broadly
+the development and investigations we carried out were as follows:
+
+
+%By investigating other galaxies' \cite{scannapieco2011formation},it has been revealed that spiral arms frequently follow a logarithmic spiral pattern. 
+
+
+%Understanding the structure and dynamics of our galaxy is complicated by the fact that our viewing point is positioned within the rapidly rotating disc of stars, gas, and dust clouds that surrounds us and extends into space. In contrast to visible light, radio waves can pass through the dust clouds that obscures the visible light from stars, and by measuring the distances and velocities of neutral hydrogen clouds, radio astronomers have made significant contributions to  [reveal the 3D structure of our galaxy.] %the construction of a image of our spiral galaxy as seen perpendicular to the plane using radio astronomy telescopes.
+
+%In order to conduct successful radio astronomy research, it is necessary to design and develop  [ suitable antenna system and receivers, which involve use of RF and digital electronics, and electrical as well as mechanical elements] %the multiple interacting radio frequency (RF), electrical, and electronics components, as well as the mechanical elements that are required to construct radio telescope. 
+
+%These systems must be capable of detecting faint radio signals from space with desired resolution, accuracy and efficiency. Radio aperture synthesis (RAS) is a method developed by Sir Martin Ryle that involves electronically correlating the output of two or more aerials used as an interferometer \cite{graham1986martin}, in order to reconstruct an image which is equivalent in resolution to one observed from a large single telescope.\cite{lazio2019radio}. 
+
+%It was not until 1953 that astronomers realised the galaxy had a spiral structure, when the distances between star associations were precisely determined for the first time \cite{unsold2002structure}. 
+
+%Because we are placed inside the deferentially rotating disc of stars, gas, and dust, we get a different view of our galaxy that is unlike the view of an external galaxy. The identification of the spiral structure using optical methods is highly challenging due to their ability to penetrate dust clouds that obscures visible light from stars.
+%By investigating other galaxies' \cite{scannapieco2011formation},it has been revealed that spiral arms frequently follow a logarithmic spiral pattern. 
+
+
+
+%..................................
+%The angular power spectrum of H1 emission across a range of scales may be depicted in terms of its angular power spectrum rather than single dish-antenna surveys that reflect consistent scales.
+%....................................
+
+
+%We have also done study in configuring four such dishes in an array. The design and configuration we have arrived at is being used in the construction of the array.  
+
+%These instrument will be capable of measuring the angular power spectrum of the HI emissions using interferometric radio observations, sampling a variety of baselines, and measuring the closure phase of the HI emission when the array is successfully commissioned.
+
+
+
+
+%......................YET TO WORK)
+%Antenna tracking is a step movement procedure in which the antenna is instructed to perform an initial one-step turn in any direction, after which the level of the receiving signal is compared to the level before to the turn. If the signal strength rises, the antenna does another one-step rotation in the same direction. If the signal level drops, the antenna's rotation is reversed. The receiver antenna can monitor the maximum signal level using these step-by-step rotations. Because this technique simply utilises feedback information on the electric field intensity, it offers the benefits of a low-cost hardware setup and relatively simple control software. \cite{cho2003antenna}(Cho et al. 2003) (Tom 1970
+%................yet to edit
+
+
+%......................................
+%There has been a We have  successfully completed the analysis and optimisation of the Mauritius cyclonic condition as well as other atmospheric properties that are required for designing and engineering of mechanical structures, specifically for radio astronomy and antenna engineering.The mechanical construction sections of the antenna were successfully designed, examined, and simulated before being constructed and assembled. 
+
+
+
+%.........................................%This is related to the fact that shorter baseline spectra are highly associated with one another, and that shorter baseline spectra correspond to large angular scales.
+%.....................................
+%Shorter baselines have been shown to be advantageous for analysing the structure of the H1 emission in previous research by 
+
+
+
+
+%The instruments, which include Mauritius' first parabolic dish antenna for radio astronomy research, will enable the development of the key skills and capacity to support the SKA2-MID outstations to be constructed in Mauritius. As well as the African Very Long Baseline Interferometry Network (AVN) project aim.
+
+
+
+
+
+
+
+}
+
+
+
+

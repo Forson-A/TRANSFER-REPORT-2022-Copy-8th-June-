@@ -1,0 +1,207 @@
+\chapter{Interferometry Techniques}
+\label{Chapter6}
+
+\large {
+\section*{Interferometry and Aperture Synthesis}
+ 
+  There are several advances made in the field of radio astronomy, especially in instrumentation for interferometry \cite{richard2017interferometry}.
+  Over the past 6 decades, since the invention of combining radio waves collected from two or more radio telescope antennas  electronically to simulate one large telescope by Sir. Martin Ryle %\cite{ryle1960synthesis} 
+  have been remarkable.
+
+ \subsubsection{ Applications of Radio Interferometers}
+  Technique by astronomers to arrange arrays of small separate telescopes, mirror segments, or radio telescope antennas connected as one big telescope to provide a higher resolution making  measurements of fine angular detail in the radio emission from the sky.
+  Other applications of the radio interferometer includes the detailed measurement of the angular positions of stars and cosmic objects. The study of the gradual changes in the celestial positions attributes to the parallax positions institute by the Earth's orbits motion and the establishment of the distance scale off the universe %\cite{richard2017interferometry}.
+
+ With the development of high resolution instruments such as the Atacama Large Millimeter/submillimeter Array (ALMA) has entered the limitations range for radio astronomy of ground based observation at high-frequency of about 1THz %\cite{richard2017interferometry}.
+  
+  Low frequencies of radio astronomy observation have been reinvigorated with a number of new instruments  including the LOw Frequency ARray (LOFAR), the Long Wavelength Array (LWA), and the Murchison Widefield Array (MWA)
+  
+  
+ %With the commissioning of the Atacama Large Millimeter/submillimeter Array (ALMA), high-resolution radio astronomy has reached the high-frequency limit of groundbased observations of about 1 THz. .
+
+%The sea change for low frequencies observations has multiple new instruments in the field such as the  LOw Frequency ARray (LOFAR), the Long Wavelength Array (LWA), and the Murchison Widefield Array (MWA).
+
+%Tremendous advances in signal-processing capabilities have enabled the first instruments with multiple fields of view, the Australian SKA Pathfinder(ASKAP) and APERITIF on the Westerbork array
+
+
+
+
+\subsubsection{Why Aperture Synthesis}
+ Aperture synthesis means the ability of a radio telescope to deliver a higher angular resolutions.
+ Better still the largest single-dish radio telescope has a very poor angular resolution because radio telescopes operate at much longer wavelengths which requires much larger telescopes to achieve a higher angular resolution.
+ Observations of  centimetre radio wavelengths itself has a very poor angular resolution.
+ 
+ yet to work on........... 
+ 
+ Every practical single-dish radio telescope (Section 3.5) has relatively low angular resolution and pointing accuracy, small field-of-view, and limited sensitivity. The largest fully steerable dish has diameter \(D\approx100 m\) and its angular resolution is diffraction limited to \(\theta\approx\lambda/D\) radians, so impossibly large diameters would be needed to achieve sub-arcsecond resolution at radio wavelengths. 
+ 
+ Pointing and source-tracking accuracy is also a problem for a large single dish. The telescope beam should be able to follow a radio source on the sky within \(\sigma\approx\theta/10\) for reasonably accurate photometry or imaging. The accuracy with which the actual beam direction during an observation can be recovered by later data analysis determines the accuracy with which the sky position of a radio source can be measured. Gravitational sagging, telescope deformations caused by differential solar heating, and torques caused by wind gusts combine to limit the mechanical tracking and pointing ac curacies of the best radio telescopes to \(\sigma\sim1\) arcsec.
+ Most optical telescopes can make high-resolution images covering large areas of sky rapidly because their large fields-of-view \(\omega FoV>> \theta 2\) cover millions or billions of pixels. In contrast, most single-dish radio telescopes have only one or several beams. The geometric area of a single dish is just \(\pi D2/4\), while the geometric area \(N\pi D2/4\) of an interferometer with N dishes can be arbitrarily large. The continuum sensitivity of a single dish is strongly limited by confusion at frequencies below about 10GHz.
+ yet to work ....................yet to work on..End
+ 
+From the Fraunhofer diffraction theory %\cite{ganci1984simple}, 
+the angular resolution of a radio telescope is \(\theta=k\lambda/D\) where \(\theta\) is the angular resolution, \(\lambda\) is the wavelength of observation \textbf{D} is the diameter of the instrument and
+\textbf{k} is a factor of order unity that depends on details of antenna illumination. For a given wavelength, to improve this angular resolution, the diameter D must be increased. A resolving power \(\theta =\lambda/D\) can be obtained by coherently combining the output of two
+reflectors of diameter \textbf{d} which is much less than the separation \textbf{D} %\cite{wilson2009tools}.
+
+\subsection{Two-Element Radio Interferometers}
+Taken into the considerations Ryle and Vonberg interferometer in the year 1946 %\cite{ryle1960synthesis}  
+and the earlier investigators %\cite{jansky1933radio,reber1940cosmic,appleton1945departure,southworth1945microwave}
+to investigate cosmic radio emission.
+ Radio waves from the cosmic source is measured using an antenna,as a device for converting the radio waves into a voltage and further processed it electronically. For this reason it is informative to understand in detail the working principles of a two element interferometer.
+Two identical antennas, separated by a distance \textbf{b} as baseline (i.e., the spacing between the antennas), and signal from a radio source of very small angular diameter. Figure %\ref{fig:1}. 
+shows a block diagram of two-element quasi-monochromatic interferometer.
+Consider a two element interferometer shown in Figure  %\ref{fig:1}.
+Two antennas 1, 2 whose baseline vector \(\vec{v}\) separation of length \textbf{b} are directed towards a point source of flux density {\(\bm\hat\textbf{{S}}\)}.
+The angle between the direction to the point source and the normal to the antenna separation unit vector  is \textbf{\({\theta}\)}.The output voltages that are produced at the two antennas due to the electromagnetic waves from the point source are V1(t) and V2(t) are same. These two voltages are amplified multiplied together and then averaged. Let us assume that the radiation emitted by the source is
+monochromatic and has frequency V. Let the voltage at antenna 1 be V1(t).
+The radio waves from the source  which travels an extra distance is \textbf{b} sin \(\theta\) to reach antenna 2, the voltage is delayed by the amount \(\vec{b} sin \theta/c\). This delay is called the geometric delay ( \(\tau_g\)). The output voltage at antenna 2 will be V2(t),  It is therefore assumed that the antennas have identical gain which is \(R(\tau_g )\), the averaged output of the multiplier is therefore: \\
+
+
+
+The geometric delay of time is given as:
+\begin{equation}
+ \tau_g = \frac{\vec{b \times\vec{s}}}{c}\label{eq:1}
+\end{equation}
+
+where: c is the speed of light.
+%\begin{equation}
+%\Delta ∆\phiΦ = 2\piπ\Delta ∆s/ \lambdaλ\label{eq:2}
+%\end{equation}
+%The phase difference is also express in terms of the time delay as
+%\begin{equation}
+ % \Delta∆\phiΦ = 2\piπv\tauτ \label{eq:3} 
+%\end{equation}
+
+For simplicity, we first consider a quasi-monochromatic interferometer, one that responds only to radiation in a very narrow band \(\Delta \nu \ll << 2\pi/\tau_g\) centred on frequency \(v=\omega /(2\pi)\). Then the output voltages of antennas 1 and 2 at time t can be written as
+\begin{equation}
+V_1 =v\cos{[w(t-\tau_g)}\label{eq:2} 
+\end{equation}
+    and 
+\begin{equation}
+V_2 = v\cos{wt}\label{eq:3}
+\end{equation}
+
+
+
+These output voltages are amplified versions of the antenna input voltages; they have not passed through square-law detectors.
+
+The input voltages are then amplified at the output of the antenna. Then the  correlator multiplies these two voltages to yield the result.
+\begin{equation}
+ V_1V_2=V^{2}\cos{\omega(t-\tau_ g)}\cos{\omega t}] \label{eq:4}
+ \end{equation}
+ 
+Applying  the trigonometric identity to write this as  \(\cos{x}\cos{y}\)
+ 
+ \begin{equation}
+(V_1V_2)=\left[\left(\frac{V^{2}}{2}\right) [\cos{(2\omega t - \omega\tau) + \cos{\omega\tau_g}}\right]\label{eq:5}
+\end{equation}
+
+%The correlator also takes a time average long enough \((\Deltat >> (2\omega) - 1)\) to remove the high-frequency term \(\cos{(2\omega t - \omega \tau_g)}\) from the correlator response (output voltage) R and keep only the slowly varying term as;
+
+The correlator also takes a time average long enough \(\delta >> (2\omega -1)\) to remove the high-frequency term \( \cos{2} \omega t - \omega \tau_g\) from the correlator response (output voltage) R and keep only the slowly varying term as;
+
+\begin{equation}
+R=(V_1V_2)=\left(\frac{V^{2}}{2}\right)\cos{\omega\tau_g}\label{eq:6}
+\end{equation}.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=4in]{two_element_interometoryradio.jpg}
+ \caption{ Block diagram of a two-element quasi-monochromatic Interferometer} %\cite{condon2016essential}
+\label{fig:1}
+\end{figure}
+
+
+\subsection{Fringe Function}
+The output \(R_g\), (also called
+the fringe), hence varies in a quasi-sinusoidal form, with its instantaneous frequency
+being maximum when the source is at zenith and minimum when the source is either
+rising or setting Figure %\ref{fig:2}
+
+The correlator output voltage equation %\ref{eq:8}
+(also called the fringe) varies sinusoidally as the Earth’s rotation changes the source direction relative to the baseline vector. For a example when the source is at zenith the instantaneous frequency will be maximum and minimum when the  source is either ascending or setting at the horizon shown in Figure %\ref{fig:2}. 
+
+\begin{figure}[htp]
+\centering
+    \includegraphics[width=4in]{rqme.jpg}
+\caption{The output of a two element interferometer as a function of time}
+%\cite{chengalurtw}
+\label{fig:2}
+\end{figure}
+
+ The output of a two element interferometer, the source's position changes with time due to the rotation of the Earth. If we placed the interferometer at the equator and have an  east–west baseline arrangement  figure %\ref{fig:1}, 
+ and if the source is on the celestial equator, then the source position relative to the baseline zenith is given by
+
+\begin{equation}
+\phi =\omega\tau_g=\frac{\omega}{c}b\cos{\theta}\label{eq:7}
+\end{equation}
+
+depends on \(\theta\) as follows:
+
+\begin{equation}
+\frac{d\phi}{d\theta}=-\frac{\omega}{c}b\sin{\theta}\label{eq:8}
+\end{equation}
+
+\begin{equation}
+\frac{d\phi}{d\theta}=-2\pi\left(\frac b\sin{\theta}{\lambda}\right) \label{eq:9}
+\end{equation}
+
+
+Figure \ref{fig:2}:The output of a two element interferometer as a function of time. The solid
+line represents the observed qausi-sinosoidal output (the fringe) and the dotted line represents a pure sinusoid whose frequency is equal to the peak instantaneous frequency of the fringe. The instantaneous fringe frequency is maximum when the source is at the zenith (the center of the plot) and is minimum when the source is rising (left extreme) or setting (right extreme).
+
+
+
+The fringe period \(\Delta\phi=2\pi\) corresponds to an angular shift \(\Delta \pi\theta =\lambda/(b\sin{\theta}sin \theta)\). The fringe phase is an exquisitely sensitive measure of source position if the projected baseline \(b\sin{\theta}\) is many wavelengths long. It is worth note that fringe phase and hence measured source position is not affected by small tracking errors of the individual telescopes. It depends on time, and times can be measured by clocks with much higher accuracy than angles (ratios of lengths of moving telescope parts) can be measured by rulers. Also, an interferometer whose baseline is horizontal is not affected by the plane-parallel component of atmospheric refraction, which delays the signals reaching both telescopes equally. Consequently, interferometers can determine the positions of compact radio sources with unmatched accuracy. The response R equation \ref{eq:6} of a two-element interferometer with directive antennas is that sinusoid multiplied by the product of the voltage patterns of the individual antennas.
+
+\subsection{Complex Visibility}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Paper Section}
+Section stuff
+
+\subsection{Paper Subsection}
+\section{Paper Section}
+Section stuff
+
+\subsection{Paper Subsection}
+\section{Paper Section}
+Section stuff
+
+\subsection{Paper Subsection}
+
+\subsection{Paper Subsection}
+\section{Final Paper Section}
+Wrap up your paper here
+
+
+
+
+
+
+\section*{Acknowledgments}
+Put the acknowledgements from your paper here
+
+}
